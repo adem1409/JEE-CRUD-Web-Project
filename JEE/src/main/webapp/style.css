@@ -1,0 +1,153 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Cairo", sans-serif;
+  background-image: url("imgs/background.jpg");
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100vh;
+}
+
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+
+.button {
+  padding: 15px 20px;
+  border-radius: 20px;
+  background-color: tomato;
+  color: white;
+  font-weight: bold;
+}
+.button:hover {
+  background-color: #eee;
+  color: tomato;
+}
+.logo img {
+  width: 70px;
+}
+.overlay {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 65%;
+  z-index: -1;
+}
+.landing {
+  height: calc(100vh - 100px);
+  display: grid;
+  place-content: center;
+}
+.landing .text {
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+.landing .button {
+  width: fit-content;
+}
+
+.login form {
+  display: grid;
+  gap: 10px;
+}
+.login form input {
+  padding: 20px;
+  border-radius: 50px;
+  border: none;
+  opacity: 0.7;
+}
+input:focus {
+  outline: none;
+}
+button {
+  border: none;
+  cursor: pointer;
+}
+.login .title {
+  font-size: 50px;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.login .radio {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin: 20px 0;
+}
+.login .button {
+  width: fit-content;
+  margin: 20px auto;
+}
+
+.fields .input {
+  margin: 20px 0;
+  display: grid;
+  gap: 10px;
+}
+.fields .input input {
+  width: 300px;
+  font-size: 17px;
+}
+.fields .input label {
+  font-weight: bold;
+  font-size: 20px;
+  translate: 10px;
+}
+.box {
+  background-color: #2e2e2e79;
+  border-radius: 30px;
+  display: grid;
+  padding: 30px 50px;
+  place-items: center;
+}
